@@ -1,0 +1,484 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "b51c4946-7d98-11eb-8324-38d5479d0148",
+    "deck_config_uuid": "51fd0716-67e9-11eb-a855-38d5479d0148",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoAgain": 0,
+            "autoAlert": 0,
+            "autoAnswer": 0,
+            "autoplay": true,
+            "crowdanki_uuid": "51fd0716-67e9-11eb-a855-38d5479d0148",
+            "currentValue": 120,
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxLife": 120,
+            "maxTaken": 60,
+            "name": "[Intense] English C1",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 0,
+                "perDay": 60,
+                "separate": true
+            },
+            "recover": 5,
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 100
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 0,
+    "extendRev": 0,
+    "media_files": [],
+    "name": "Teorie::AAG",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n color: black;\n text-align: center;\n background-color: white;\n}\n\n.solution {\n text-align: left;\n}",
+            "flds": [
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Question",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Liberation Sans",
+                    "media": [],
+                    "name": "Solution",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Math",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{Question}}\n\n<hr id=answer>\n\n<div style=\"text-align: center;\">\n    <div style=\"display: inline-block; text-align: left;\">\n\t\t{{Solution}}\n    </div>\n</div>",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Question}}\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice abecedy",
+                "Konečná množina symbolů<div>Značíme \\(\\Sigma\\) nebo \\(T\\)</div>"
+            ],
+            "guid": "eW0t=l<fqM",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice řetězce, \\(\\epsilon, \\Sigma^* \\Sigma^+\\)",
+                "Konečná posloupnost symbolů abecedy<br>\\(\\epsilon\\) - prázdná posloupnost<div>\\(\\Sigma^* \\) - množina všech řetězců nad \\(\\Sigma\\)</div><div>\\(\\Sigma^+\\) - množina všech neprázdných řetězců nad&nbsp;\\(\\Sigma\\)</div><div>\\(\\Sigma^* = \\Sigma^+ \\cup \\{ \\epsilon \\}\\)</div>"
+            ],
+            "guid": "I+ZCN,w1{$",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice operace zřetězení řetězců",
+                "Operace zřetězení značíme '.':<div>-&nbsp;\\(\\forall x, y \\in \\Sigma^* \\), připojením řetězce \\(y\\) za řetězec \\(x\\) vznikne řetězec \\(x.y\\) nebo \\(xy\\)</div><div>- Je asociativní&nbsp;\\( \\forall x, y, z \\in \\Sigma^*: (xy)z = x(yz) \\)</div><div>- Není komutativní&nbsp;\\( \\exists x, y \\in \\Sigma^* : xy \\neq yx \\)</div><div>-&nbsp;\\(\\epsilon\\) se chová vzhledem k operaci zřetězení jako neutrální prvek:&nbsp;\\( x\\epsilon = \\epsilon x = x\\)</div><div>-&nbsp;\\( a^0 = \\epsilon, a^1 = a, a^2 = aa, ...\\)</div><div><br></div><div>Reverze:</div><div>-&nbsp;\\( x^R \\)</div><div>-&nbsp;\\( x = a_1a_2a_3...a_n, x^R = a_na_{n-1}...a_1 \\)</div>"
+            ],
+            "guid": "s}jz&XP5eT",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice délky řetězce",
+                "Značíme \\(|x|\\)<div>\\(|x| \\geq 0\\)</div><div>\\(|x| = 0 \\Leftrightarrow x = \\epsilon\\)</div>"
+            ],
+            "guid": "o=zDh?WQ4i",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Formální jazyk",
+                "Formální jazyk \\(L\\) nad \\(\\Sigma: L \\subseteq \\Sigma^*\\) (množina řetězců)"
+            ],
+            "guid": "I,3jkJuOE2",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Operace formálního jazyka",
+                "- množinové operace: sjednocení, průnik, rozdíl<div>- komplement (doplňek) jazyka: \\(L_1: \\overline{L_1} = \\Sigma^* \\setminus L_1\\)</div><div>- součin (zřetězení) jazyků: \\(L = L_1 . L_2 = \\{ xy: x \\in L_1, y \\in L_2 \\}\\) (\\(L\\) je definován nad abecedou \\(\\Sigma = \\Sigma_1 \\cup \\Sigma_2\\))</div><div>- n-tá mocnina jazyka \\(L: L^n = L . L^{n-1}, L^0 = \\{\\epsilon\\}\\)</div><div>&nbsp; Iterace (Kleene star) \\(L^*\\) jazyka \\(L: L^* = \\bigcup_{n=0}^{\\infty}L^n\\)</div><div>&nbsp; \\(L^* = L^+ \\cup \\{ \\epsilon \\}\\)</div><div>&nbsp; \\(L^+ = L.L^* = L^*.L = \\bigcup_{n=1}^{\\infty}L^n\\)</div>"
+            ],
+            "guid": "d?kGU&2n/U",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice gramatika",
+                "Gramatika je čtveřice \\(G = (N, \\Sigma, P, S)\\), kde<div>- \\(N\\) je konečná množina neterminálních symbolů</div><div>-&nbsp;\\(\\Sigma\\) je konečná množina terminálních symbolů ( \\( \\Sigma \\cap N = \\emptyset \\), značíme též T)</div><div>-&nbsp;\\(P\\) je množina (přepisovacích) pravidel. Je to konečná podmnožina množiny&nbsp;\\( ( N \\cup \\Sigma )^* . N . (N \\cup \\Sigma)^* \\times (N \\cup \\Sigma )^* \\), (element \\((\\alpha, \\beta)\\) z P zapíšeme \\(\\alpha \\rightarrow \\beta\\) a nazveme pravidlo)</div><div>-&nbsp;\\( S \\in N \\) je počáteční symbol gramatiky</div>"
+            ],
+            "guid": "xTJ],854Dl",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice derivace",
+                "\\( \\alpha \\rightarrow^k \\beta \\), jestliže existuje posloupnost \\(\\alpha_0, \\alpha_1, ..., \\alpha_k\\), pro&nbsp;\\(k \\geq 0, k + 1\\) řetězců takových, že \\(\\alpha = \\alpha_0, \\alpha_{i - 1}\\rightarrow \\alpha_i\\) pro&nbsp;\\( 1 \\leq i \\leq k\\), a&nbsp;\\(\\alpha_k = \\beta\\). Tuto posloupnost nazýváme derivací řetězce \\(\\beta\\) z řetězce \\(\\alpha\\), která má delků \\(k\\) v gramatice \\(G\\)<br>"
+            ],
+            "guid": "H8vw#,jSZF",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice tranzitivního uzávěru",
+                "Tranzitivní uzávěr relace \\(\\rightarrow\\) je \\(\\alpha \\rightarrow^+ \\beta\\), když&nbsp;\\( \\alpha \\rightarrow^i \\beta \\) pro nějaké&nbsp;\\( i \\geq 1 \\). (\\(\\rightarrow^+\\) čteme jako \"derivuje po nenulovém počtu kroků\")"
+            ],
+            "guid": "iBCOr|u#i%",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice větné formy",
+                "\\(G = (N, \\Sigma, P, S)\\). Řetězec \\(\\alpha\\) nazveme větnou formou v gramatice \\(G\\), jestliže \\(S \\rightarrow^* \\alpha, \\alpha \\in ( N \\cup \\Sigma )^*\\)"
+            ],
+            "guid": "z;n?[*RODB",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Věta generovaná gramatikou \\(G\\)",
+                "Větná forma v \\(G = (N, \\Sigma, P, S)\\), která neobsahuje žádné neterminální symboly, se nazývá věta generovaná gramatikou G."
+            ],
+            "guid": "l1$&]r[+qq",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice jazyku generovaného gramatikou",
+                "\\(L(G) = \\{ w : w \\in \\Sigma^*, \\exists S \\rightarrow^* w \\}\\) je jazyk generovaný gramatikou \\(G = (N, \\Sigma, P, S)\\)"
+            ],
+            "guid": "C6fqB%Xwr/",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice ekvivalentní gramatiky",
+                "Gramatiky \\(G_1, G_2\\) jsou ekvivalentní, když generují stejný jazyk. To znamená, že \\(L(G_1) = L(G_2)\\)"
+            ],
+            "guid": "kKN3|KscZ(",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Klasifikace gramatik",
+                "\\(G = (N, \\Sigma, P, S)\\). Říkáme, že G je:<div><br></div><div>0. Neomezená (typu 0), jestliže odpovídá obecné definici gramatiky</div><div>1. Kontextová (typu 1), jestliže každé pravidlo z P má tvar&nbsp;\\( \\gamma A \\delta \\rightarrow \\gamma\\alpha\\delta \\), kde&nbsp;\\(\\gamma, \\delta \\in (N \\cup \\Sigma)^*, \\alpha \\in (N \\cup \\Sigma)^+, A \\in N\\) nebo tvar&nbsp;\\( S \\rightarrow \\epsilon \\) v případě, že \\(S\\) se nevyskytuje na pravé straně žádného pravidla</div><div>2. Bezkontextová (typu 2), jestliže každé pravidlo má tvar&nbsp;\\( A \\rightarrow \\alpha \\), kde \\( A \\in N, \\alpha \\in ( N \\cup \\Sigma )^* \\)<br>3. Reglární (typu 3), jestliže každé pravidlo má tvar&nbsp;\\( A \\rightarrow \\alpha B \\) nbo&nbsp;\\( A \\rightarrow \\alpha \\), kde&nbsp;\\( A, B \\in N, a \\in \\Sigma \\), nebo tvar&nbsp;\\( S \\rightarrow \\epsilon \\) v případě, že&nbsp;\\(S\\) se nevyskytuje na pravé straně žádného pravidla</div>"
+            ],
+            "guid": "zO}ui,ptTk",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Klasifikace jazyků",
+                "Řekněme, že jazyk je<div>0. rekurzivně spočetný ( typu 0), pokud&nbsp;\\( \\exists \\) neomezená gramatika, která ho generuje</div><div>&nbsp;- rozpoznatelné Turingovým strojem</div><div>1. je kontextový (typu 1), pokud&nbsp;\\( \\exists \\) kontextový gramatika, která ho generuje</div><div>&nbsp;- rozpoznatelné lineárně omezeným Turingovým strojem</div><div>2. Je bezkontextový (typu 2), pokud&nbsp;\\( \\exists \\) bezkontextová gramatika, která ho generuje</div><div>&nbsp;- rozpoznatelné zásobníkovým automatem</div><div>3. je regulární (typu 3), pokud&nbsp;\\( \\exists \\) regulární gramatika, která ho generuje</div><div>&nbsp;- rozpoznatelné konečným automatem</div>"
+            ],
+            "guid": "ugmWOF{4}c",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice uzavřenosti bezkontextových jazyků",
+                "Jestliže určité jazyky jsou bezkontextové a jazyk \\(L\\) z nich vznikl nějakou operací, pak \\(L\\) je také bezkontextový"
+            ],
+            "guid": "A:DD(&Sifi",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice konečného jazyku",
+                "Jazyk&nbsp;\\( L \\subset \\Sigma^* \\) je nazýván konečný, pokud&nbsp;\\( \\exists n \\in N: |L| &lt; n \\)"
+            ],
+            "guid": "M~`ew2WupM",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice derivačního stromu",
+                "Derivační strom je grafickým vyjádřením syntaktické struktury větné formy<div><br></div><div>Mějme gramatiku \\(G = ( N, \\Sigma, P, S )\\). Derivační strom je strom, který má následující vlastnosti</div><div><br></div><div>1. Uzly derivačního stromu jsou ohodnoceny terminálními a neterminálními symboly a symbolem&nbsp;\\(\\epsilon\\) (pak je to jediný syn svého otcovského uzlu)</div><div>2. Kořen stromu je ohodnocen počátečním symbolem \\(S\\)</div><div>3. *Jestliže uzel má alespoň jednoho následovníka, je ohodnocen neterminálním symbolem*</div><div>4. Jestliže&nbsp;\\( n_1, n_2, ..., n_k \\) jsou bezprostřední následovníci uzlu&nbsp;\\( n \\), který je ohodnocen symbolem \\(A\\), a tyto uzly jsou zleva doprava ohodnoceny symboly&nbsp;\\(A_1, A_2, ..., A_k\\), pak&nbsp;\\( A \\rightarrow A_1A_2...A_k\\) je pravidlo v P</div><div>5. Koncové uzly derivačního stromu tvoří zleva doprava větnou formu nebo větu v gramatice \\(G\\), která je výsledkem derivačního stromu</div>"
+            ],
+            "guid": "b&t;Lu9?E2",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice deterministický konečý automat",
+                "Deterministický konečný automat \\(M\\) je pětice \\(M = (Q, \\Sigma, \\delta, F)\\)<div><br></div><div>- \\(Q\\) je konečná množina vnitřních stavů</div><div>- \\(\\Sigma\\) je koenčná vstupní abeceda</div><div>- \\(\\delta\\) je zobrazení z&nbsp;\\( Q \\times \\Sigma \\) do&nbsp;\\(Q\\)</div><div>-&nbsp;\\(q_0 \\in Q\\) je počáteční stav</div><div>-&nbsp;\\( F \\subsete Q \\) je množina vstupních kontrolních vstavů</div>"
+            ],
+            "guid": "hEiMY%;cIg",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice konfigurace konečného automatu, počáteční konfigurace, koncová konfigurae",
+                "Nechť M = (Q, \\Sigma, \\delta, q_0, F) je konečný automat. Dvojici (q, w) \\in Q \\times \\Sigma^* nazveme konfiguraci konečného automatu M.<div><br></div><div>Počáteční konfigurace: konfigurace&nbsp;\\( q_0, w \\)</div><div>Koncová konfigurace:&nbsp;\\((q, epsilon) \\), kde \\(q \\in F\\)</div>"
+            ],
+            "guid": "dM8D3r>D4r",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definiec přechodu DKA",
+                "Nechť \\(M = (Q, \\Sigma, \\delta, q_0, F)\\) je deterministický konečný automat. Nechť \\(\\vdash_M\\) je relace nad \\(Q \\times \\Sigma^*\\) taková, že \\((q, w) \\vdash_M (p,w')\\) právě tehdy, když \\(w = aw'\\) a \\(\\delta(q, a) = p\\) pro nějaké \\(a \\in \\Sigma, w \\in \\Sigma^*\\). Prvek relace \\(\\vdash_M\\) nazveme přechodem v automatu \\(M\\)."
+            ],
+            "guid": "I3w}*{A;vt",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice k-té mocniny relace \\vdash, jeho tranzitivní uzávěr, a reflexivní",
+                "\\vdash^k_M - k-tá mocnina relace \\vdash_M<div>(\\alpha_0, \\beta_0) \\vdash_M^k (\\alpha_k, \\beta_k) \\Leftrightarrow \\exists(\\alpha_i, \\beta_i), 0 &lt; i &lt; k: (\\alpha_i, \\beta_i) \\vdash_M (\\alpha_{i+1}, \\beta_{i+1}), 0 \\leq i &lt; k</div><div>\\vdash_M^+ - tranzitivní uzávěr relace \\vdash_M</div><div>\\vdash_M^* - tranzitivní a reflexivní uzávěr relace \\vdash_M</div><div><br></div><div>\\((q, aw') \\vdash_M (p, w') \\Leftrightarrow ((q, aw'), (p, w')) \\in \\vdash_M\\)</div>"
+            ],
+            "guid": "Ngu&WY?WN(",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice: Jazyk příjmaný DKA",
+                "Řekněme, že řetězec w \\in \\Sigma^* je přijat konečným deterministickým automatem M = (Q, \\Sigma, \\delta, q_0, F), jestliže \\exists(q_0,w) \\vdash_M^* (q, \\epsilon) pro nějaké q \\in F.<div>L(M) = \\{ w: w \\in \\Sigma^*, \\existsq \\in F : (q_0, w) \\vdash^* (q, \\epsilon) \\} je jazyk příjímaný automaty M.</div><div><br></div>"
+            ],
+            "guid": "G:P0@+,j$k",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice úplně určeného DKA",
+                "Deterministický konečný automat M = (Q, \\Sigma, \\delta, q_0, F) nazveme úplně určený, když zobrazení \\delta(q, a) je definováno pro všechny dvojice stavů q \\in Q a vstupních symbolů a \\in \\Sigma."
+            ],
+            "guid": "fK!aR!%3Ct",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Nedeterministický konečný automat",
+                "Nedeterministický konečný automat (NKA) M je pětice M = (Q, \\Sigma, \\delta, q_0, F)<div><br></div><div>- Q je konečná množina vnitřních stavů</div><div>- \\Sigma je konečná vtupní abeceda</div><div>- \\delta je zobrazení Q \\times \\Sigma do množiny všech podmnožin Q (značíme 2^Q)</div><div>- q_0 \\in Q je počáteční stav</div><div>- F \\subseteq Q je množina koncových stavů</div>"
+            ],
+            "guid": "HmEr[-p8XU",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice přechod NKA",
+                "Nechť M = (Q, \\Sigma, \\delta, q_0, F) je nedeterministický konečný automat. Nechť \\vdash_M je relace nad Q \\times \\Sigma^* taková, že (q, w) \\vdash_M (p, w') právě tehdy, když w = aw' a p \\in \\delta(q, a) pro nějaké a \\in \\Sigma. w \\in \\Sigma^*. Prvek relace \\vdash_M nazveme přechodem v automatu M."
+            ],
+            "guid": "t_YDF_eNn~",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice jazyku příjmeném NKA",
+                "Řekněme, že řetězec w \\in \\Sigma^* je přijat nedeterministickým konečným automatem M = (Q, \\Sigma, \\delta, q_0, F), jestliže \\exists(q_0, w) \\vdash^* (q, \\epsilon) pro nějaké q \\in F.<div><br></div><div>L(M) = { w : w \\in \\Sigma^*, \\exists q \\in F, (q_0, w) \\vdash^* (q, \\epsilon) } je jazyk příjmaný nedeterministickým konečným automatem M.</div>"
+            ],
+            "guid": "EG)0)K@5AR",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice dosažitelný stav, nedosažitelný stav",
+                "Nechť je dán konečný automat M = (Q, \\Sigma, \\delta, q_0, F). Stav q \\in Q nazveme dosažitelný, pokud existuje řetězec w \\in \\Sigma^* takový, že existuje posloupnost přechodů, která vede z počátečního stavu q_0 do stavu q<div><br></div><div>(q_0, w) \\vdash^* (q, \\epsilon)</div><div><br></div><div>Stav, který není dosažitelný, nazveme nedosažitelný stav</div>"
+            ],
+            "guid": "DDzIv^w5id",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Algoritmus nalezení a odstranění nedosažitelných stavů",
+                "NKA M' bez nedosažitelných stavů L(M) = L(M') FindAndRemove( NKA M = (Q, \\Sigma, \\delta, q_0, F)&nbsp; )<div>1: Q_0 \\leftarrow \\{ q_0 \\} ; i \\leftarrow 0</div><div>2: repeat</div><div>3:&nbsp; &nbsp;i \\leftarrow i + 1</div><div>4:&nbsp; &nbsp;Q_i \\leftarrow \\{ q : q \\in \\delta(p, a), p \\in Q_{i - 1}, a \\in \\Sigma \\} \\cup Q_{i - 1}</div><div>5: until Q_i = Q_{i - 1}</div><div>6: Q_a \\leftarrow Q_i</div><div>7: M' \\leftarrow (Q_a, \\Sigma, \\delta', q_0, F \\cap Q_a), kde \\delta':\\delta(q, x) \\leftarrow \\delta(q, x), \\forall x \\in \\Sigma, \\forall q \\in Q_a</div><div>8: return M'</div>"
+            ],
+            "guid": "C5P{%eU.@X",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Užitečný stav",
+                "Nechť je dán konečný automat M = ( Q, \\Sigma, \\delta, q_0, F ). Stav q \\in Q nazveme užitečný, pokud existuje řetězec w \\in \\Sigma^* takový, že existuje posloupnost přechodů, která vede ze stavu q do nějakého koncového stavu:<div><br></div><div>\\exists p \\in F: (q, w) \\vdash^* (p, \\epsilon)</div><div><br></div><div>Stav, která není užitečný, nazveme zbytečný stav</div>"
+            ],
+            "guid": "h>rUagx^.M",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Algoritmus nalezení užitečního / zbytečného stavu",
+                "NKA M' RemoveUnneccessary( NKA M = (Q, \\Sigma, \\delta, \\q_0, F) \\wedge L(M) \\new \\emptyset )<div>1: Q_0 \\leftarrow F; i \\leftarrow 0</div><div>2: :repeat</div><div>3:&nbsp; &nbsp;i \\leftarrow i + 1</div><div>4:&nbsp; &nbsp;Q_i \\leftarrow \\{ q : \\exists p \\in Q_{i-1}, p \\in \\delta(q,a), a \\in \\Sigma \\} \\cup Q_{i - 1}</div><div>5: until Q_i = Q_{i - 1}</div><div>6: Q_u \\leftarrow Q_i</div><div>7: M' \\leftarrow (Q_u, \\Sigma, \\delta', q_0, F), kde \\delta': \\delta'(q, x) \\leftarrow \\delta(q, x) \\cap Q_u, \\forall x \\in \\Sigma, \\forall q \\in Q_u</div><div>8: return M'</div>"
+            ],
+            "guid": "e.h$<ei|bk",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice konečné automaty s \\epsilon-přechody",
+                "Nedeterministický konečný automat s \\epsilon-přechody je pětice M = (Q, \\Sigma, \\delta, q_0, F), kde Q, \\Sigma, q_0, F jsou stejné jako v definici nKA. Zobrazení \\delta je definováno takto:<div>\\delta je zobrazení z Q \\times ( \\Sigma \\cup \\{ \\epsilon \\} ) do množiny všech podmnožin Q</div>"
+            ],
+            "guid": "j_-X?dfGG?",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice přechodu v konečném automatu s \\epsilon - přechody",
+                "Nechť M = ( Q, \\Sigma, \\delta, q_0, F ) je nedeterministický konečný automat s \\epsilon - přechody. Prvek relace \\vdash_M \\subseteq ( Q \\times \\Sigma^* ) \\times ( Q \\times \\Sigma^* ) nazveme přechodem v automatu M. Jestliže p \\in \\delta(q, a), a \\in \\Sigma \\cup \\{ \\epsilon \\}, pak (q, aq) \\vdash_M (p, w) pro libovolné w \\in \\Sigma^*"
+            ],
+            "guid": "Dd-rt,[ekt",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Definice funkce \\epsilon-Clusure",
+                "Funkce \\epsilon-Closure: Q \\mapsto 2^Q pro konečný automat M = ( Q, \\Sigma, \\delta, q_0, F ) je definována takto:<div><br></div><div>\\epsilon-Closure(q) = \\{ p : (q, \\epsilon) \\vdash^* (p, \\epsilon), p \\in Q \\}.</div>"
+            ],
+            "guid": "IAD,Yph6_e",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Odstranění \\epsilon-přechodů",
+                "NKA M' OdstanitEpsilony( NKA M = (Q, \\Sigma, \\delta, q_0, F) s \\epsilon přechody )<div>1. M' \\leftarrow (Q, \\Sigma, \\delta', q_0, F')</div><div>2. q'(q, a) \\leftarrow \\bigcup_{p \\in \\epsilon-closure(q)} \\delta(p, a), \\forall \\Sigma</div><div>3. F' \\leftarrow \\{ q: \\epsilon-closure(q) \\cap F \\neq \\emptyset, q \\in Q \\}</div><div>4. return M'</div>"
+            ],
+            "guid": "u]Le{3^Y8~",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Konečný automat s více poč. stavy",
+                "Nedeterministický konečný automat s množinou počátečních stavů I je pětice M = (Q, \\Sigma, \\delta, I, F)<div>- Q, \\Sigma, \\delta, F jsou stejné jako v definici NKA</div><div>- I je neprázdná podmnožina množiny stavů, I \\subseteq Q</div>"
+            ],
+            "guid": "pbd%amU>[u",
+            "note_model_uuid": "15a831d2-5529-11eb-bb95-38d5479d0148",
+            "tags": []
+        }
+    ]
+}
